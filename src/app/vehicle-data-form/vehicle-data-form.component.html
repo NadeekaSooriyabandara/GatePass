@@ -7,7 +7,7 @@
 <div class="login-page">
     <div class="form">
         <img class="card-img-top" src="assets/images/addVehicle.svg" alt="Card image cap">
-        <form class="login-form" *ngIf="!toggleView" action="">
+        <form class="login-form" action="">
 
             <input type="text" placeholder="Vehicle Number" (keyup)="vehicleNo = $event.target.value" />
             <input type="text" placeholder="Vehicle Type" (keyup)="vehicleType = $event.target.value" />
