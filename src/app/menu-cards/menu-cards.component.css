@@ -1,0 +1,71 @@
+.dataEnter, .dataTable, .notificationTable {
+  background: transparent !important;
+}
+
+.dataEnter, .dataTable, .notificationTable, .card {
+  margin: 0 1%;
+  border-radius: 5px;
+}
+
+img {
+  width: 50%;
+  height: auto;
+  margin: 10%;
+}
+
+.btn {
+  width: 150px;
+}
+
+/*.btn-primary {*/
+/*background: #505E72;*/
+/*border: none;*/
+/*}*/
+
+/*.btn-primary:hover {*/
+/*background: #5D8CAE;*/
+/*border: none;*/
+/*}*/
+
+.btn-primary {
+  background: #77C1AE;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #5D8CAE;
+  border: none;
+}
+
+.btn-primary:active, :visited {
+  background: #505E72 !important;
+  border: none;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 30px;
+  color: #505E72;
+  margin-bottom: 28px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.tb-row {
+  display: flex;
+  flex: 1 1 100%;
+  padding: 20px;
+}
+
+.tb-row .card {
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .tb-row {
+    flex-direction: column;
+  }
+}
+
+

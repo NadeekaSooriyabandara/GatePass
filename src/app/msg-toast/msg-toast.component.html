@@ -1,0 +1,6 @@
+<div class="msg-wrapper">
+  <div id="snackbar" [ngClass]="(msgView && msg)?'show':'hide'">{{msg}}
+    <img (click)="msgView = false" *ngIf="errorMsg" src="assets/images/toastCloseIcon.svg">
+    <img (click)="msgView = false" *ngIf="!errorMsg" src="assets/images/toastTickMark.svg">
+  </div>
+</div>

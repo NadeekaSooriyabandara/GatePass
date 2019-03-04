@@ -1,0 +1,46 @@
+.table {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 100%;
+}
+
+thead tr {
+  color: #FFFFFF;
+  background-color: #6f849e;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.btn {
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: no-drop !important;
+}
+
+.btn.accept {
+  background-color: #37CB73 !important;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer !important;
+}
+
+.btn.ignore {
+  background-color: #D72449 !important;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer !important;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 25px;
+  color: #505E72;
+  margin-bottom: 28px;
+  padding: 10px 20px;
+  font-weight: bold;
+}

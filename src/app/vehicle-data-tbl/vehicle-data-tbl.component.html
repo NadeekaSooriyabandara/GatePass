@@ -1,0 +1,58 @@
+<h2 class="page-title">
+  Vehicles Data - Vehicle Management System
+</h2>
+
+<app-log-out></app-log-out>
+
+<div *ngIf="viewFullTable">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">Vehicle No.</th>
+      <th scope="col">Vehicle Type</th>
+      <th scope="col">Seats</th>
+      <th scope="col">AC Facility</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let vehicle of vehicles; let i = index">
+      <th scope="row">{{i+1}}</th>
+      <td class="strong">{{vehicle?.vehicle_no}}</td>
+      <td>{{vehicle?.vehicle_type}}</td>
+      <td>{{vehicle?.seats}}</td>
+      <td>{{vehicle?.ac}}</td>
+    </tr>
+    <!--<tr>-->
+    <!--<th scope="row">2</th>-->
+    <!--<td class="strong">KH-6487</td>-->
+    <!--<td>Van</td>-->
+    <!--<td>15</td>-->
+    <!--<td>Yes</td>-->
+    <!--<td>Prof. A.Karunarathne</td>-->
+    <!--<td class="strong">Accepted</td>-->
+    <!--<td>-->
+    <!--<button type="button" class="btn">Accept</button>-->
+    <!--</td>-->
+    <!--<td>-->
+    <!--<button type="button" class="btn ignore">Ignore</button>-->
+    <!--</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--<th scope="row">3</th>-->
+    <!--<td class="strong">ME-9489</td>-->
+    <!--<td>Car</td>-->
+    <!--<td>5</td>-->
+    <!--<td>Yes</td>-->
+    <!--<td>Dr. N.Rajapaksha</td>-->
+    <!--<td class="strong">Ignored</td>-->
+    <!--<td>-->
+    <!--<button type="button" class="btn accept">Accept</button>-->
+    <!--</td>-->
+    <!--<td>-->
+    <!--<button type="button" class="btn">Ignore</button>-->
+    <!--</td>-->
+    <!--</tr>-->
+    </tbody>
+  </table>
+</div>

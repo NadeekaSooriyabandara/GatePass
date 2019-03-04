@@ -1,0 +1,23 @@
+<h2 class="page-title">
+  {{pageTitle}} To Vehicle Management System
+</h2>
+
+<div class="login-page">
+  <div class="form">
+    <img class="card-img-top" src="assets/images/profle.svg" alt="Card image cap">
+    <form class="register-form" (keydown)="createEnterBtn($event)" *ngIf="toggleView" action="">
+      <input type="email" placeholder="email address" (keyup)="newEmail = $event.target.value"/>
+      <input type="password" placeholder="password" (keyup)="newPass = $event.target.value"/>
+      <a class="button" (click)="createClick()">create</a>
+      <p class="message">Already registered? <a (click)="clickButton()">Login In</a></p>
+    </form>
+    <form class="login-form" (keydown)="loginEnterBtn($event)" *ngIf="!toggleView" action="">
+      <input type="email" placeholder="email address" (keyup)="email = $event.target.value"/>
+      <input type="password" placeholder="password" (keyup)="password = $event.target.value"/>
+      <a class="button" (click)="loginClick()">login</a>
+      <p class="message">Not registered? <a (click)="clickButton()">Create an account</a></p>
+    </form>
+  </div>
+</div>
+
+

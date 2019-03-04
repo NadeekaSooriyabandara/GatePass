@@ -1,0 +1,13 @@
+<div *ngIf="notificationArray" class="notification-multiple">
+    <div *ngFor="let notification of notificationArray; let i = index" class="notification">
+      <img class="" src="assets/images/close.svg" alt="Card image cap" (click)='onClickNotificationClose(notification,i,$event);$event.stopPropagation();'>
+      <p>Req. From: <strong>{{notification.req_person}}</strong></p>
+      <p>Task: <strong>{{notification.task}}</strong></p>
+      <p>Vehicle No: <strong>{{notification.vehicle_no}}</strong></p>
+      <p>Vehicle Type: <strong>{{notification.vehicle_type}}</strong></p>
+      <!--<div class="action_Info">-->
+        <!--<a class="accept_Info" (click)="onClickNotificationAccept(i)">Accept</a>-->
+        <!--<a class="ignore_Info" (click)="onClickNotificationIgnore(i)">Ignore</a>-->
+      <!--</div>-->
+    </div>
+</div>

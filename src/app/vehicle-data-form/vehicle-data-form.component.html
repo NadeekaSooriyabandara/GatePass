@@ -1,0 +1,47 @@
+<app-log-out></app-log-out>
+
+<h2 class="page-title">
+    Add New Vehicle To Vehicle Management System
+</h2>
+
+<div class="login-page">
+    <div class="form">
+        <img class="card-img-top" src="assets/images/addVehicle.svg" alt="Card image cap">
+        <form class="login-form" *ngIf="!toggleView" action="">
+
+            <input type="text" placeholder="Vehicle Number" (keyup)="vehicleNo = $event.target.value" />
+            <input type="text" placeholder="Vehicle Type" (keyup)="vehicleType = $event.target.value" />
+            <input type="text" placeholder="Vehicle Tag" (keyup)="vehicleTag = $event.target.value" />
+
+
+            <div class="form__divide">
+                <div class="form__divide-col form__divide--switch">
+                    <span class="switch__text">Air Condition</span>
+                    <label class="switch">
+            <input type="checkbox" (click)="clickRadioBtn()">
+            <span class="slider round"></span>
+          </label>
+                </div>
+                <div class="form__divide-col">
+                    <input type="number" placeholder="Number Of Seats" min="1" (keyup)="numberOfSeats = $event.target.value" (click)="numberOfSeats = $event.target.value" />
+                </div>
+
+
+            </div>
+
+
+            <!--<div class="form-group">-->
+            <!--<label for="sel1">Air Condition</label>-->
+            <!--<select class="form-control" id="sel1">-->
+            <!--<option (click)="airCondition = 'Yes'">Yes</option>-->
+            <!--<option (click)="airCondition = 'No'">No</option>-->
+            <!--</select>-->
+            <!--</div>-->
+
+
+
+            <a class="button" (click)="clickSave()">Save</a>
+
+        </form>
+    </div>
+</div>

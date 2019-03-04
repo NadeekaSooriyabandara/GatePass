@@ -1,0 +1,10 @@
+.logout img {
+  width: 4%;
+  max-width: 40px;
+  position: fixed;
+  right: 15px;
+  top: 10px;
+  opacity: 0.9;
+  cursor: pointer;
+  z-index: 0;
+}

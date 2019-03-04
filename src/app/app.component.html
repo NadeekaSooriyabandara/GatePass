@@ -1,0 +1,11 @@
+<app-msg-toast></app-msg-toast>
+
+<!--<app-login *ngIf="login" (goMenu)="goMenuFunction($event)"></app-login>-->
+<router-outlet></router-outlet>
+
+<app-menu-cards *ngIf="goMenu" (showDetail)="showDetailFunction($event)"></app-menu-cards>
+
+<app-vehicle-detail-tbl *ngIf="showDetail"></app-vehicle-detail-tbl>
+
+
+<app-notifications></app-notifications>
